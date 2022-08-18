@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="crudProject.css">
 </head>
-<body>
+<body class="container">
     <div>
         <form class="container border border-success p-4" id="dinoForm">
             <div class="form-group mb-3">
                 <label for="place">Enter your new dinosaur name.</label>
-                <input type="text" class="form-control" id="dinoName" placeholder="Dinosaur Name">
+                <input type="text" class="form-control" id="dinoName" placeholder="Dinosaur's Name">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's size.</label>
+                <input type="text" class="form-control" id="dinoSize" placeholder="Dinosaur's Size">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's diet.</label>
+                <input type="text" class="form-control" id="dinoDiet" placeholder="Dinosaur's Diet">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's environment.</label>
+                <input type="text" class="form-control" id="dinoEnvironment" placeholder="Dinosaur's Environment">
             </div>
             <div>
                 <button type="button" class="btn btn-primary" id="addDino">Add Dinosaur</button>
