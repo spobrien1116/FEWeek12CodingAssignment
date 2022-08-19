@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h4>Carno</h4>
+            <button class="btn btn-danger">Delete Dinosaur</button>
+        </div>
+        <ul class="list-group list-group-flush id=dinoInfo">
+            <li class="list-group-item"><b>Size: </b> Large</li>
+            <li class="list-group-item"><b>Diet: </b> Carnivore</li>
+            <li class="list-group-item"><b>Environment: </b> Terrestrial</li>
+            <li class="list-group-item"><b>Body Part: </b>Claws<b>   Color: </b> Red</li>
+            <button class="btn btn-danger">Delete Feature</button>
+            <li class="list-group-item"><b>Body Part: </b>Fin<b>   Color: </b> Yellow</li>
+            <button class="btn btn-danger">Delete Feature</button>
+        </ul>
+        <div class="card-body">
+            <input type="text" id="${dinosaur._id}-feature-part" class="form-control" placeholder="Dinosaur's Body Part">
+            <input type="text" id="${dinosaur._id}-feature-color" class="form-control" placeholder="Dinosaur's Body Part Color">
+            <button class="btn btn-primary form-control">Add Feature</button>
+        </div>
+    </div>
+
+    <!-- for (let i = 0; i < dinosaur.features; i++) {
+        console.log("Testing the list of features: ", dinosaur.features[i]);
+        $(`#${dinosaur._id}`).find('#dinoInfo').append(
+            `<li class="list-group-item id="feature[i]-${dinosaur._id}"><b>Body Part: </b> ${dinosaur.features[i].part} <b>   Color: </b> ${dinosaur.features[i].color}</li>
+            <button class="btn btn-danger" onclick="DOMManipulator.deleteFeature('${dinosaur._id}', 'feature-${dinosaur._id}')">Delete Feature</button>`
+        );
+    } -->
+    
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+</body>
+</html>
