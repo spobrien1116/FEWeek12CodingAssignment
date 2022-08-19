@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Week 12 Coding Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="crudProjectMockAPI.css">
+</head>
+<body class="container">
+    <div>
+        <form class="container border border-success p-4" id="dinoForm">
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur name.</label>
+                <input type="text" class="form-control" id="dinoName" placeholder="Dinosaur's Name">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's size.</label>
+                <input type="text" class="form-control" id="dinoSize" placeholder="Dinosaur's Size">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's diet.</label>
+                <input type="text" class="form-control" id="dinoDiet" placeholder="Dinosaur's Diet">
+            </div>
+            <div class="form-group mb-3">
+                <label for="place">Enter your new dinosaur's environment.</label>
+                <input type="text" class="form-control" id="dinoEnvironment" placeholder="Dinosaur's Environment">
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" id="addDino">Add Dinosaur</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="dinoApp">
+
+    </div>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="crudProjectMockAPI.js"></script>
+</body>
+</html>
