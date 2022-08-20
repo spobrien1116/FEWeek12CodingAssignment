@@ -1,0 +1,41 @@
+.dinoInfo li:nth-child(even) {
+    background-color: #196b0e;
+    color: #e7d2d2;
+}
+
+.dinoInfo li:nth-child(odd) {
+    background-color: #56e1f3;
+    color: #613d0d;
+}
+
+h4 {
+    text-emphasis: bold;
+}
+
+.card-header {
+    background-color: #daa30e;
+}
+
+.card-body {
+    background-color: #000000;
+}
+
+.card {
+    background-color: #5a5a5a;
+}
+
+#dinoForm {
+    background-color: #ca4511;
+}
+
+.dinoFormLabel {
+    background-color: #e9c917;
+}
+
+.dinoFormInput {
+    background-color: #35d7ff;
+}
+
+.container {
+    background-color: #8f8e8e;
+}

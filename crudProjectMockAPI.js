@@ -63,7 +63,7 @@ class DinosaurService {
     static updateDinosaur(dinosaur) {
         console.log("This should be everything that the Dinosaur object is made of, including new features: ", dinosaur);
         console.log("This specific dinosaur's API endpoint: ", this.url + `/${dinosaur._id}`);
-        console.log("This should return a specific feature from this dinosaur: ", dinosaur.features);
+        console.log("This should return an array of features from this dinosaur: ", dinosaur.features);
         const responsePromise = $.ajax({
             url: this.url + `/${dinosaur._id}`,
             dataType: 'json',
@@ -205,7 +205,7 @@ class DOMManipulator {
             //         <button class="btn btn-danger" onclick="DOMManipulator.deleteFeature('${dinosaur._id}', '${feature._id}')">Delete Feature</button>`
             //     );
             // }
-            console.log(dinosaur.features.length);
+            console.log("This is the length of the array for this dinosaur's features:", dinosaur.features.length);
             for (let i = 0; i < dinosaur.features.length; i++) {
                 console.log("Testing the list of features: ", dinosaur.features[i]);
                 $(`#${dinosaur._id}`).find('.dinoInfo').append(
